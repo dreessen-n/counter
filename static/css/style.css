@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.lead {
+    font-size: 30px;
+}
