@@ -11,31 +11,31 @@
 <body>
 <!-- Used bootstrap for the styling -->
 <div class="container-fluid px-4 py-5 my-5 text-center">
-	<div class="lc-block">
-		<div editable="rich">
-			<h2 class="display-5 fw-bold">Counter</h2>
-		</div>
-	</div>
-	<div class="lc-block col-lg-6 mx-auto mb-4">
-		<div editable="rich">
-			<p class="lead">True visit count: {{ session['true_visit'] }}</p>
-			<p class="lead">Modified visit count: {{ session['visit'] }}</p>
-		</div>
-	</div>
-	<div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
-		<a class="btn btn-primary btn-lg px-4 gap-3 btn-success" href="/" role="button">Visit</a>
-		<a class="btn btn-primary btn-lg px-4 gap-3 btn-warning" href="/destroy_session" role="button">Reset</a>
-	</div>
-	<div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
-		<a class="btn btn-primary btn-lg px-4 gap-3 btn-info" href="/plus2visits" role="button">+ 2 Visits</a>
-	</div>
-	<div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
-		<form action="/select_increment" method="post">
-			<label for="increment_value">Enter an value to increment by:</label><br>
-			<input type="number" name="increment_value" id="increment_value"><br>
-			<input class="btn btn-primary btn-lg px-4 gap-3 btn-danger" type="submit" value="Submit that value">
-		</form>
-	</div>
+    <div class="lc-block">
+    <div editable="rich">
+        <h2 class="display-5 fw-bold">Counter</h2>
+    </div>
+    </div>
+    <div class="lc-block col-lg-6 mx-auto mb-4">
+        <div editable="rich">
+            <p class="lead">True visit count: {{ session['true_visit'] }}</p>
+            <p class="lead">Modified visit count: {{ session['visit'] }}</p>
+        </div>
+    </div>
+    <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="btn btn-primary btn-lg px-4 gap-3 btn-success" href="/" role="button">Visit</a>
+        <a class="btn btn-primary btn-lg px-4 gap-3 btn-warning" href="/destroy_session" role="button">Reset</a>
+    </div>
+    <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="btn btn-primary btn-lg px-4 gap-3 btn-info" href="/plus2visits" role="button">+ 2 Visits</a>
+    </div>
+    <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <form action="/select_increment" method="post">
+            <label for="increment_value">Enter an value to increment by:</label><br>
+            <input type="number" name="increment_value" id="increment_value"><br>
+            <input class="btn btn-primary btn-lg px-4 gap-3 btn-danger" type="submit" value="Submit that value">
+        </form>
+    </div>
 
 </div>
 
