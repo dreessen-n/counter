@@ -5,15 +5,19 @@
     box-sizing: border-box;
 }
 
+/* Override or add to some bootstrap styles */
+/* Center the form */
 .wrapper {
     display: flex;
     justify-content: center;
 }
 
+/* Add extra margin to the btn*/
 .btn {
     margin: 5px;
 }
 
+/* increase the font on the count */
 .lead {
     font-size: 30px;
 }
