@@ -6,7 +6,7 @@ app.secret_key = 'The Dude Abides!'
 @app.route('/')
 def index():
     # Add 2 counters: true_visit to get actual number of times
-    #that ('/') is accessed. And visit for modified count
+    # that ('/') is accessed. And visit for modified count
     if 'visit' and 'true_visit' in session:
         session['true_visit'] += 1
         session['visit'] += 1
@@ -17,16 +17,19 @@ def index():
 
 @app.route('/destroy_session')
 def clear():
+    # Clear the session to delete store value
     session.clear()
     return redirect('/')
 
 @app.route('/plus2visits')
 def plus2():
+    # Add one extra to get 2: 1 plus redirect
     session['visit'] += 1
     return redirect('/')
 
 @app.route('/select_increment', methods=['POST'])
 def select_increment():
+    # Have to take 1 off increment to account for redirect back to index
     num = int(request.form['increment_value']) - 1
     session['visit'] += num 
     return redirect('/')
